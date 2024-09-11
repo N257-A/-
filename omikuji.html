@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <div style="background-color:azure";>
+    <title>今日のあなたの運勢</title>
+    </head>
+    <body>
+        <!--タイトル-->
+        <br>
+        <h1 id="midashi_1"; style="text-align: center";>今日の運勢をおみくじで占おう！</h1>
+        
+        <!--今日の日時を知らせるボタン-->
+        <div id="datetime"></div>
+        <span style="text-align: center";>
+        <button style="width: 110px ; height: 50px" ; onclick="datetimeshow()">今日の日付</button>
+        <script src="omikuji_datetime.js"></script>
+        <br>
+
+        <!--おみくじの画像-->
+        <p><font-size="7">
+            <img src="omikuji.png" alt="おみくじの画像" width="250px"><br>
+            <br>
+            <br>
+            <br>
+            <!--おみくじの結果の説明-->
+            <h2>【 運勢の結果一覧 】<h2>
+                <span style="background-color:yellow ; font-size:large;";>「メガ吉」・・・今日のあなたは絶好調どころの話ではない。神がかっています！！</span><br>
+                <span style="background-color:gold ; font-size:large";>「大吉」・・・超楽しい日になりそう！</span><br>
+                <span style="background-color:darksalmon ; font-size:large";>「中吉」・・・いいことがたくさんある日になりそう！</span><br>
+                <span style="background-color:pink ; font-size:large";>「吉」・・・誰かと意気投合しそう！</span><br>
+                <span style="background-color:thistle ; font-size:large";>「小吉」・・・運が味方しているよ！何か新しいことを始めよう。</span><br>
+                <span style="background-color:lightblue ;font-size:large";>「末吉」・・・まわりの人があなたを助けてくれるよ！</span><br>
+                <span style="background-color:rgb(109, 177, 180) ; font-size:large";>「凶」・・・いやなことが起こるかも。注意して！</span><br>
+                <span style="background-color:rgb(58, 189, 117) ; font-size:large";>「大凶」・・・何をやってもうまくいきません。ゆっくり進めましょう。</span><br>
+                <span style="background-color:rgb(2, 170, 170) ; font-size:large";>「メガ凶」・・・もうここまできたら今日は諦めましょう。気をつけて過ごしてください。</span><br>
+                <span style="background-color:cornflowerblue ; font-size:large";>「不明」・・・今日の運勢はあなたがつくるのです！自分を信じて突き進みましょう。</span><br>
+            <br>
+            <br>
+            <br>
+        
+            <!--おみくじボタン-->
+            <div id="omikuji"></div>
+            <script src = "omikuji.js"></script>
+            <br>
+            <button style = "background-color: orange; width: 150px; height: 50px"; onclick = omikujishow();>おみくじを引く</button>
+            <br>
+            <br>
+        <p>
+    </body>
+    </div>
+</html>
